@@ -1,6 +1,26 @@
 body {
-    background-color: #f9f4f4;
-    font-family: Arial, sans-serif;
-    color: #d53d3d;
-    
+  background-color: #f9f4f4;
+  font-family: Arial, sans-serif;
+  color: #d53d3d;
+}
+
+.quiz-card {
+  background-color: rgb(194, 137, 46);
+  padding: 30px;
+  text-align: center;
+  color: #f9f4f4;
+  border-radius: 20px;
+}
+
+.quiz-card h3 {
+  color: black;
+}
+
+.show-answer-button {
+  background-color: wheat;
+  padding: 5px;
+  cursor: grab;
+}
+.show-answer-button:hover {
+  background-color: #2140bb;
 }
