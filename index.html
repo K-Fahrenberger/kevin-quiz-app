@@ -1,20 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Kevin's Fabulous Quiz App</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-    <h1>Kevin's Fabulous Quiz App</h1>
+      <h1>Kevin's Fabulous Quiz App</h1>
     </header>
+    <!-- quiz card with white bookmark -->
     <div class="quiz-card">
-        <h3>What is the planet Mars named after?</h3>
-<button class="show-answer-button"> Show answer</button>
-<p>It's named after the Roman God of war</p>
+      <img src="resources/bookmark.png" alt="Bookmark" class="bookmark-icon" />
+      <h3>What is the planet Mars named after?</h3>
+      <button class="show-answer-button" >Show answer</button>
+      <p class="answer">It's named after the Roman God of war</p>
+      <div class="tags">
+        <span class="tag">#planet</span>
+        <span class="tag">#solarsystem</span>
+        <span class="tag">#space</span>
+  </div>
     </div>
-    
-</body>
+    <!-- quiz card blueprint 
+    <div class="quiz-card">
+      <img
+        src="resources/bookmark_filled.png"
+        alt="Bookmark"
+        class="bookmark-icon"
+      />
+      <h3>What is the planet Mars named after?</h3>
+      <button class="show-answer-button">Show answer</button>
+      <p>It's named after the Roman God of war</p>
+              <div class="tags">
+            <span class="tag">Tag1</span>
+            <span class="tag">Tag2</span>
+            <span class="tag">Tag3</span>
+      </div>
+    </div> -->
+
+    <div class="quiz-card">
+        <img
+          src="resources/bookmark_filled.png"
+          alt="Bookmark"
+          class="bookmark-icon"
+        />
+        <h3>How many planets are in our solar system?</h3>
+        <button class="show-answer-button">Show answer</button>
+        <p>8</p>
+        <div class="tags">
+            <span class="tag">#planet</span>
+            <span class="tag">#solarsystem</span>
+            <span class="tag">#space</span>
+      </div>
+    </div>  
+      
+      <div class="quiz-card">
+        <img
+          src="resources/bookmark_filled.png"
+          alt="Bookmark"
+          class="bookmark-icon"
+        />
+        <h3>What is the estimated age of the planet earth?</h3>
+        <button class="show-answer-button">Show answer</button>
+        <p>4.54 billion years</p>
+        <div class="tags">
+            <span class="tag">#planet</span>
+            <span class="tag">#solarsystem</span>
+            <span class="tag">#space</span>
+      </div>
+      </div>
+
+      <div class="quiz-card">
+        <img
+          src="resources/bookmark_filled.png"
+          alt="Bookmark"
+          class="bookmark-icon"
+        />
+        <h3>In what year was the first manned mission to space?</h3>
+        <button class="show-answer-button">Show answer</button>
+        <p>1961</p>
+        <div class="tags">
+            <span class="tag">#planet</span>
+            <span class="tag">#solarsystem</span>
+            <span class="tag">#space</span>
+      </div>
+      </div>
+
+  
+
+    <footer class="fixed-footer">
+      <nav class="navbar">
+        <a href="index.html"
+          ><img src="resources/home_filled.png" alt="Home-current"
+        /></a>
+        <a href="bookmarks.html"
+          ><img src="resources/bookmark_transparent.png" alt="Bookmark"
+        /></a>
+        <a href="profile.html"
+          ><img src="resources/profile.png" alt="Profile"
+        /></a>
+      </nav>
+    </footer>
+  </body>
 </html>

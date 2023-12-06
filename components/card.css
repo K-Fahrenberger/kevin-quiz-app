@@ -1,0 +1,50 @@
+.quiz-card {
+  background-color: rgb(66, 80, 237);
+  padding: 10px;
+  text-align: center;
+  color: #f9f4f4;
+  margin: 3px;
+  position: relative;
+  border: 6px solid #db67dd;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.quiz-card h3 {
+  color: black;
+}
+
+.bookmark-icon {
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  width: 40px;
+}
+
+.tags {
+  position: absolute;
+  bottom: 10px;
+  /* left: 10px; */
+  left: 5%;
+  bottom: 5%;
+  display: flex;
+  gap: 4px;
+  font-size: smaller;
+}
+
+.tag {
+  background-color: #ffffff;
+  color: rgb(16, 14, 14);
+  padding: 2px;
+  border-radius: 5px;
+}
+
+p {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 300px) {
+  .tags {
+    font-size: xx-small;
+  }
+}

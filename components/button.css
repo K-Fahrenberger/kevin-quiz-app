@@ -1,0 +1,9 @@
+.show-answer-button {
+    background-color: wheat;
+    padding: 4px;
+    cursor: pointer;
+  }
+  .show-answer-button:hover {
+    background-color: #bb2192;
+  }
+  
