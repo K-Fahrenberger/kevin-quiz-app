@@ -20,6 +20,11 @@
   right: 10px;
   width: 40px;
 }
+.bookmark-icon.bookmarked {
+  background-color: rgba(26, 255, 0, 0.5)
+  /* needs fix */
+  /* background-image: url('/resources/bookmark_filled.png'); */
+}
 
 .tags {
   position: absolute;
@@ -41,6 +46,9 @@
 
 p {
   margin-bottom: 60px;
+}
+.hidden {
+  display: none;
 }
 
 @media (max-width: 300px) {

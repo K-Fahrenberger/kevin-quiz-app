@@ -4,18 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Kevin's Fabulous Quiz App</title>
+    <title>Quiz App</title>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
-      <h1>Kevin's Fabulous Quiz App</h1>
+      <h1>Quiz App</h1>
     </header>
-    <!-- quiz card with white bookmark -->
+    <!-- quiz card with white functionality -->
     <div class="quiz-card">
-      <img src="resources/bookmark.png" alt="Bookmark" class="bookmark-icon" />
+      <!-- <img src="resources/bookmark.png" alt="Bookmark" class="bookmark-icon" /> -->
+      <img src="resources/bookmark_transparent.png" alt="Bookmark" class="bookmark-icon" id="bookmarkButton" onclick="toggleBookmark()" />
       <h3>What is the planet Mars named after?</h3>
-      <button class="show-answer-button" >Show answer</button>
-      <p class="answer">It's named after the Roman God of war</p>
+      <button id="answerButton" class="toggle-button" onclick="toggleAnswer()">Show Answer</button>
+      <br>
+      <br>
+      <div id="answer" class="hidden">
+        It's named after the Roman God of war
+        <br>
+        <br>
+    
+    </div>
+    <br>
       <div class="tags">
         <span class="tag">#planet</span>
         <span class="tag">#solarsystem</span>
@@ -47,7 +57,10 @@
         />
         <h3>How many planets are in our solar system?</h3>
         <button class="show-answer-button">Show answer</button>
-        <p>8</p>
+        <!-- <p>8</p> -->
+        <br>
+        <br>
+        <br>
         <div class="tags">
             <span class="tag">#planet</span>
             <span class="tag">#solarsystem</span>
@@ -63,7 +76,10 @@
         />
         <h3>What is the estimated age of the planet earth?</h3>
         <button class="show-answer-button">Show answer</button>
-        <p>4.54 billion years</p>
+        <!-- <p>4.54 billion years</p> -->
+        <br>
+        <br>
+        <br>
         <div class="tags">
             <span class="tag">#planet</span>
             <span class="tag">#solarsystem</span>
@@ -79,7 +95,10 @@
         />
         <h3>In what year was the first manned mission to space?</h3>
         <button class="show-answer-button">Show answer</button>
-        <p>1961</p>
+        <!-- <p>1961</p> -->
+        <br>
+        <br>
+        <br>
         <div class="tags">
             <span class="tag">#planet</span>
             <span class="tag">#solarsystem</span>
@@ -100,6 +119,9 @@
         <a href="profile.html"
           ><img src="resources/profile.png" alt="Profile"
         /></a>
+        <a href="form.html"
+        ><img src="resources/question.png" alt="Form"
+      /></a>
       </nav>
     </footer>
   </body>
