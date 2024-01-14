@@ -1,3 +1,4 @@
+//bookmark functionality
 document
   .querySelector(".bookmark")
   .addEventListener("click", changeBookmarkIcon);

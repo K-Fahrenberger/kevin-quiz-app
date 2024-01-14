@@ -21,7 +21,7 @@
   width: 40px;
 }
 .bookmark-icon.bookmarked {
-  background-color: rgba(26, 255, 0, 0.5)
+  background-color: rgba(26, 255, 0, 0.5);
   /* needs fix */
   /* background-image: url('/resources/bookmark_filled.png'); */
 }
