@@ -1,44 +1,55 @@
+document.querySelector('[data-js="form"]').addEventListener('submit', function (event) {
+    event.preventDefault();
 
-// form.addEventListener("submit", (event) => {
-//   event.preventDefault();
-
-//   console.log(event.target);
-// });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const form = document.querySelector('[data-js="form"]');
-//     const questionsContainer = document.querySelector('[data-js="questions-container"]');
+    var questionInput = document.getElementById('question');
+    var answerInput = document.getElementById('answer');
+    var tagInput = document.getElementById('tag');
   
-//     form.addEventListener("submit", function (event) {
-//       event.preventDefault();
-  
-//       const question = document.getElementById("question").value;
-//       const answer = document.getElementById("answer").value;
-//       const tag = document.getElementById("tag").value;
+    var questionText = questionInput.value.trim();
+    var answerText = answerInput.value.trim();
+    var tagText = tagInput.value.trim();
   
 
-//       const card = document.createElement("div");
-//       card.classList.add("card");
+    // create card elements
+    var card = document.createElement('div');
+    card.classList.add('quiz-card');
   
-//       const questionElement = document.createElement("p");
-//       questionElement.textContent = `Question: ${question}`;
+    var questionHeading = document.createElement('h3');
+    questionHeading.textContent = questionText;
   
-//       const answerElement = document.createElement("p");
-//       answerElement.textContent = `Answer: ${answer}`;
+    var answerButton = document.createElement('button');
+    answerButton.textContent = 'Show Answer';
   
-//       const tagElement = document.createElement("p");
-//       tagElement.textContent = `Tag: ${tag}`;
+    var answerDiv = document.createElement('div');
+    answerDiv.textContent = answerText;
+    answerDiv.classList.add('hidden');
   
-
-//       card.appendChild(questionElement);
-//       card.appendChild(answerElement);
-//       card.appendChild(tagElement);
+    var tagsDiv = document.createElement('div');
+    tagsDiv.classList.add('tags');
+    var tagsArray = tagText.split(' ');
+    tagsArray.forEach(function (tag) {
+      var span = document.createElement('span');
+      span.classList.add('tag');
+      span.textContent = '#' + tag;
+      tagsDiv.appendChild(span);
+    });
   
-//       questionsContainer.appendChild(card);
+    // Append elements to the card
+    card.appendChild(questionHeading);
+    card.appendChild(answerButton);
+    card.appendChild(document.createElement('br'));
+    card.appendChild(document.createElement('br'));
+    card.appendChild(answerDiv);
+    card.appendChild(document.createElement('br'));
+    card.appendChild(document.createElement('br'));
+    card.appendChild(tagsDiv);
   
-
-//       form.reset();
-//     });
-//   });
+    var formContainer = document.querySelector('[data-js="questions-container"]');
+    formContainer.appendChild(card);
   
+    // Clear form fields
+    questionInput.value = '';
+    answerInput.value = '';
+    tagInput.value = '';
+  });
   
