@@ -1,16 +1,16 @@
-//Old code
-//  function toggleBookmark() {
-//   var bookmarkIcon = document.getElementById('bookmarkButton');
-//   bookmarkIcon.classList.toggle('bookmarked');
-// }
+//bookmark functionality
+document
+  .querySelector(".bookmark")
+  .addEventListener("click", changeBookmarkIcon);
 
-// function toggleAnswer() {
-//   var answerDiv = document.getElementById('answer');
-//   var answerButton = document.getElementById('answerButton');
-//   answerDiv.classList.toggle('hidden');
-//   if (answerDiv.classList.contains('hidden')) {
-//       answerButton.textContent = 'Show Answer';
-//   } else {
-//       answerButton.textContent = 'Hide Answer';
-//   }
-// }
+function changeBookmarkIcon() {
+  var button = this;
+  var bookmarkImage = button.querySelector("img");
+  button.classList.toggle("filled");
+
+  if (button.classList.contains("filled")) {
+    bookmarkImage.src = "resources/bookmark_filled.png";
+  } else {
+    bookmarkImage.src = "resources/bookmark_transparent.png";
+  }
+}
