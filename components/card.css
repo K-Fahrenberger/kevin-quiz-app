@@ -1,30 +1,29 @@
 .quiz-card {
   background-color: rgb(66, 80, 237);
   padding: 10px;
+  align-items: center;
   text-align: center;
   color: #f9f4f4;
   margin: 3px;
   position: relative;
   border: 6px solid #db67dd;
   border-radius: 8px;
-  margin: 20px;
 }
 
 .quiz-card h3 {
   color: black;
 }
 
-.bookmark-icon {
+/* .bookmark {
   position: absolute;
   top: -15px;
   right: 10px;
-  width: 40px;
-}
-.bookmark-icon.bookmarked {
-  background-color: rgba(26, 255, 0, 0.5);
-  /* needs fix */
-  /* background-image: url('/resources/bookmark_filled.png'); */
-}
+} */
+.bookmark img {
+  width: 100%;
+  height: 100%;
+} 
+
 
 .tags {
   position: absolute;
