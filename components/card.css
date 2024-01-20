@@ -3,7 +3,7 @@
   padding: 10px;
   align-items: center;
   text-align: center;
-  color: #f9f4f4;
+  /* color: #f9f4f4; */
   margin: 3px;
   position: relative;
   border: 6px solid #db67dd;
@@ -16,30 +16,14 @@
 
 .bookmark {
   position: absolute;
-  top: -15px;
+  top: -10px;
   right: 10px;
+  background-color: #ffffff;
 }
 
-/* Make the image responsive */
 .bookmark img {
-  width: 100%;
-  height: auto;
+  width: 10px;
 } 
-
-.bookmark .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
 
 .tags {
   position: absolute;
