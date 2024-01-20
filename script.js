@@ -14,9 +14,9 @@ function changeBookmarkIcon() {
     bookmarkImage.src = "resources/bookmark_transparent.png";
   }
 }
-// toggles hidden class 
-document.getElementById('answerButton').addEventListener('click', function() {
-  var answerDiv = document.getElementById('answer');
+// toggles hidden class
+document.getElementById("answerButton").addEventListener("click", function () {
+  var answerDiv = document.getElementById("answer");
 
-  answerDiv.classList.toggle('hidden');
+  answerDiv.classList.toggle("hidden");
 });

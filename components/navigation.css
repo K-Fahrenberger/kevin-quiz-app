@@ -1,15 +1,16 @@
 .fixed-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #f9f7f7;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f7f7;
+  z-index: 1; /*fixes behavior in apended form*/
 }
 
-  .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
 }
 
 .navbar img {
@@ -22,4 +23,3 @@
   /* red-green-blue-alpha(which means opacity) */
   background-color: rgba(173, 173, 175, 0.5);
 }
-
